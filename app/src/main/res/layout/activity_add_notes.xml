@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNotes"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00BCD4"
+        android:elevation="4dp">
+
+       <!-- <TextView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:focusable="true"/> -->
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/baseline_check_24"
+            android:layout_marginStart="200dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/edtTitle"
+            android:background="@drawable/edittext_no_underline"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Start Typing.."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/edtMessage"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/edittext_no_underline"/>
+
+        <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="11sp"
+            android:id="@+id/btnSave"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="480dp"/> -->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
